@@ -1,7 +1,7 @@
 var React = require('react');
 var ReactDOM = require('react-dom');
-var {Route, Router, IndexRoute, hashHistory} = require('react-router')
-//Above is the ES6 destructuring syntax
+var {Route, Router, IndexRoute, hashHistory} = require('react-router');
+var Main = require('Main'); //ES6 destructuring syntax
 
 //Below is the ES5 version
 // var Route = require('react-router').Route;
@@ -11,6 +11,10 @@ var {Route, Router, IndexRoute, hashHistory} = require('react-router')
 
 
 ReactDOM.render(
-  <h1>Boilerplate app!</h1>,
+  <Router history={hashHistory}>
+    <Route path="/" component={Main}>
+
+    </Route>
+  </Router>,
   document.getElementById('app')
 );
