@@ -27551,20 +27551,49 @@ module.exports = exports['default'];
 
 
 var React = __webpack_require__(7);
+var Nav = __webpack_require__(242);
 
 var Main = React.createClass({
 	displayName: 'Main',
 
 	render: function render() {
 		return React.createElement(
-			'h2',
+			'div',
 			null,
-			'Main Component'
+			React.createElement(Nav, null),
+			React.createElement(
+				'h2',
+				null,
+				'Main Component'
+			)
 		);
 	}
 });
 
 module.exports = Main;
+
+/***/ }),
+/* 242 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var React = __webpack_require__(7);
+
+var Nav = React.createClass({
+  displayName: 'Nav',
+
+  render: function render() {
+    return React.createElement(
+      'h2',
+      null,
+      'Navigation'
+    );
+  }
+});
+
+module.exports = Nav;
 
 /***/ })
 /******/ ]);

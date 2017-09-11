@@ -10,9 +10,10 @@ module.exports = {
   },
   resolve: {
     modules: ['src', 'node_modules', 'ReactWeather'],
-    //Aliases let us name our modules
+    //Aliases let us name our modules, makes it easy for us to require our modules.
     alias: {
-      Main: 'app/components/Main.jsx'
+      Main: 'app/components/Main.jsx',
+      Nav: 'app/components/Nav.jsx'
     },
     extensions: ['.js', '.jsx']
   },
